@@ -8,9 +8,11 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './form-nova-transacao.component.css'
 })
 export class FormNovaTransacaoComponent {
-  valorTransacao = "40";
+  tipoTransacao = "";
+  valorTransacao = "";
 
   aoSubmeter() {
+    console.log(this.tipoTransacao);
     console.log(this.valorTransacao);
   }
 }
